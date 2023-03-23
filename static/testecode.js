@@ -56,7 +56,6 @@ async function insert_data() {
       }
     }
   }
-
   setInterval(load_page, 60000); 
 }
 
