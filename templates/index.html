@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block title %} <title>Monitoramento Remoto!</title>  {% endblock title %}
+{% block script %}
+    <script src="./static/data_api.js"></script>
+    <link rel="stylesheet" href="/static/index.css" type="text/css">
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        insert_data();
+      });
+    </script>
+{% endblock script %}
+{% block main %}
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <h5 class="ti">24H</h5>
+        <div class="col" id="24H">
+
+        </div>
+      </div>
+      <div class="col">
+        <h5 class="ti">CEO</h5>
+        <div class="col" id="CEO">
+          
+        </div>
+      </div>
+      <div class="col">
+        <h5 class="ti">USF</h5>
+        <div class="col" id="USF">
+          
+        </div>
+      </div>
+      <div class="col">
+        <h5 class="ti">FISIO</h5>
+        <div class="col" id="FISIO">
+          
+        </div>
+      </div>
+      <div class="col">
+        <h5 class="ti">OUTROS</h5>
+        <div class="col" id="OUTROS">
+          
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}

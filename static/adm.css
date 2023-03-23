@@ -1,0 +1,86 @@
+
+.box1{
+    width: 220px ;
+    height: 190px;
+    border-style:groove;
+    border-width: 2px;
+    border-radius: 10%;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    transition: width 0.5s, height 0.5s; 
+}
+.box1:hover{
+    width: 275px;
+    height: 237px;
+}
+.box2{
+    width: 220px ;
+    height: 190px;
+    border-style:groove;
+    border-width: 2px;
+    border-radius: 10%;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    transition: width 0.5s, height 0.5s;
+}
+.box2:hover{
+    width: 275px ;
+    height: 237px;
+}
+.box3{
+    width: 220px ;
+    height: 190px;
+    border-style:groove;
+    border-width: 2px;
+    border-radius: 10%;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    transition: width 0.5s, height 0.5s;
+}
+.box3:hover{
+    width: 275px ;
+    height: 237px;
+}
+.box4{
+    width: 220px ;
+    height: 190px;
+    border-style:groove;
+    border-width: 2px;
+    border-radius: 10%;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    transition: width 0.5s, height 0.5s;
+}
+.box4:hover{
+    width: 275px ;
+    height: 237px;
+}
+.box5{
+    width: 220px ;
+    height: 190px;
+    border-style:groove;
+    border-width: 2px;
+    border-radius: 10%;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    transition: width 0.5s, height 0.5s;
+}
+.box5:hover{
+    width: 275px ;
+    height: 237px;
+}

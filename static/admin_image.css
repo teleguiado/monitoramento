@@ -1,0 +1,45 @@
+.box1_24h{
+    width: 200px;
+    height: 175px;
+    transition: width 0.5s, height 0.5s;
+}
+.box1_24h:hover{
+    width: 250px;
+    height: 218px;
+}
+.box2_CEO{
+    width: 200px;
+    height: 175px;
+    transition: width 0.5s, height 0.5s;
+}
+.box2_CEO:hover{
+    width: 250px;
+    height: 218px;
+}
+.box3_USF{
+    width: 200px;
+    height: 175px;
+    transition: width 0.5s, height 0.5s;
+}
+.box3_USF:hover{
+    width: 250px;
+    height: 218px;
+}
+.box4_fisio{
+    width: 200px;
+    height: 175px;
+    transition: width 0.5s, height 0.5s;
+}
+.box4_fisio:hover{
+    width: 250px;
+    height: 218px;
+}
+.box5_OUTRAS{
+    width: 200px;
+    height: 175px;
+    transition: width 0.5s, height 0.5s;
+}
+.box5_OUTRAS:hover{
+    width: 250px;
+    height: 218px;
+}

@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title%}
+ <title> Login </title> 
+{% endblock %}
+
+{% block main %}
+        <form action="/login" method="post">
+            <div class="main_login">
+                <input type="text" name="username" placeholder="Nome de Usuário" autofocus autocomplete="off" class="login_text">
+            <div class="main_login">
+                <input type="password" name="password" placeholder="Senha">
+            </div>
+            <div>
+                <h8 style="color: brown;">{{ message1 }}</h8>
+            </div>
+            <button type="submit" class="btn btn-primary"> Entrar </button>
+        </form>
+{% endblock%}

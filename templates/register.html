@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title%} 
+    <title> Registro </title>  
+{% endblock %}
+
+{% block main %}
+        <form action="/register" method="post">
+            <div class="main_register">
+                <input type="text" name="username" placeholder="Nome de Usuário" autofocus autocomplete="off">
+            </div>
+            <div class="main_register">
+                <input type="password" name="password" placeholder="Senha">
+            </div>
+            <div class="main_register">
+                <input type="password" name="repeat_password" placeholder="Repita senha">
+            </div>
+            <div>
+                <h8 style="color: brown;">{{ message1 }}</h8>
+            </div>
+            <button type="submit" class="btn btn-primary"> Entrar </button>
+        </form>
+{% endblock%}

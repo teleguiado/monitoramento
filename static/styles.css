@@ -1,0 +1,45 @@
+.div_main
+{
+    width: 300px;
+    margin: auto;
+    border: 10px solid;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #007bff;
+}
+li
+{
+    float:left;
+}
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 9px;
+    text-decoration: none;
+}
+li a:hover 
+{
+    background-color: #007bffb6;
+}
+.main_login
+{
+    padding: 7px;
+    text-align: center;
+}
+.main_register
+{
+    padding: 4px;
+    text-align: center;
+}
+.main_monitoring
+{
+    padding: 2px;
+    text-align: center;
+}

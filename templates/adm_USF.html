@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block title %} <title>Unidades 24H</title>  {% endblock title %}
+
+{% block script %}
+    <link rel="stylesheet" href="/static/units.css">
+{% endblock %}
+
+{% block main %}
+<div class="container-fluid">
+    <div class="container text-center">
+        <a  class="btn btn-primary btn-lg" data-bs-toggle="collapse" href="#include" role="button" style="margin-bottom: 2%;">Adicionar Unidade {{ unit_tip }}</a>
+        <div class="collapse" id="include">
+            <div class="card card-body" id="form1">
+              <form action="/USF" method="post">
+                <p>Dados da Unidade</p>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <input type="text" class="form-control" name="name_unit" placeholder="Nome da Unidade" autofocus autocomplete="off">
+                      </div>
+                      <div class="col-md-6">
+                          <input type="text" class="form-control" name="other_name" placeholder="Apelido" autofocus autocomplete="off">
+                      </div>
+                      <div class="col-md-6">
+                          <input type="text" class="form-control" name="address" placeholder="Endereço" autofocus autocomplete="off">
+                      </div>
+                      <div class="col-md-6">
+                          <input type="number" class="form-control" name="district" placeholder="Distrito" autofocus autocomplete="off">
+                      </div>
+                      <div class="col-md-6">
+                          <input type="text" class="form-control" name="director" placeholder="Responsável da unidade" autofocus autocomplete="off">
+                      </div>
+                      <div class="col-md-6">
+                          <div class="row">
+                            <div class="col-md-6" style="padding-top: 2%;">
+                                <input type="radio" class="form-check-input" id="DeltaR" name="provider" value="DeltaR" checked > DeltaR 
+                            </div>
+                            <div class="col-md-6" style="padding-top: 2%;">
+                                <input type="radio" class="form-check-input" id="Afinet" name="provider" value="Afinet"> Afinet
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="ip" placeholder="IP ou HOST" autofocus autocomplete="off">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="loc" placeholder="Localização" autofocus autocomplete="off">
+                        </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="button_incluir" style="margin-top: 2%;"> Incluir Unidade</button>
+              </form>
+            </div>
+            <br>
+        </div>
+    </div>
+    <div>
+        <p style="color: red;">{{ message1 }}</p>
+    </div>
+    <div class="container text-center">
+        <ul class="list-group"> 
+            {% for line in units_page %}
+                <li class="list-group-item"><h4 style="background-color: rgb(89, 89, 233);">ID: {{ line[0] }}</h4> {{ line[2] }} | {{ line[3] }} |  {{ line[4] }}º Distrito: | Provedor: {{ line[7] }} | <a href="{{ line[8] }}" class="btn btn-primary">Localização</a></li>
+            {% endfor %}
+          </ul>
+    </div>
+  </div>
+{% endblock %}

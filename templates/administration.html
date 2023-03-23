@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block script %}
+    <link rel="stylesheet" href="/static/adm.css">
+    <link rel="stylesheet" href="/static/admin_image.css">
+{% endblock %}
+
+{% block title %} <title>Administrar Monitoramento</title>  {% endblock title %}
+
+{% block main %}
+    <div class="container text-center" style="margin-top: 7%;">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3" id="grade">
+            <a class="box1" id="24H" href="/H24" style="cursor: pointer; border-style: double; border-block: none">
+                <img class="box1_24h" src="/static/24H.png">
+            </a>
+            <a class="box2" id="CEO" href="/CEO" style="cursor: pointer; border-style: double; border-block: none">
+                <img class="box2_CEO" src="/static/CEO.png">
+            </a>
+            <a class="box3" id="USF" href="/USF" style="cursor: pointer; border-style: double; border-block: none">
+                <img class="box3_USF" src="/static/USF.png">
+            </a>
+            <a class="box4" id="fisio" href="/FISIO" style="cursor: pointer; border-style: double; border-block: none">
+                <img class="box4_fisio" src="/static/FISIOTERAPIA.png">
+            </a>
+            <a class="box5" id="OUTRAS" href="/OTHERS" style="cursor: pointer; border-style: double; border-block: none">
+                <img class="box5_OUTRAS" src="/static/OUTRAS.png">
+            </a>
+        </div>
+    </div>
+{% endblock %}
