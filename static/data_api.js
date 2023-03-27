@@ -10,18 +10,18 @@ async function create_div_father(father_ID, acronym){
   newDiv.id = acronym;
   father.appendChild(newDiv);
 }
-//cria elemento do H7 
+//cria elemento do div 
 async function create_div_child(father_ID, nick, acronym){ // o ftaher_id tambem e o acronymo
   const father = document.getElementById(father_ID);
-  const newItem = document.createElement('h7');
+  const newItem = document.createElement('div');
   newItem.textContent = nick;
-  newItem.id = (acronym + '-h7');
+  newItem.id = (acronym + '-div');
   newItem.className ='status';
   father.appendChild(newItem);
 }
 // cria o botão
 async function create_button(acronym, status){
-  const father = document.getElementById(acronym + '-h7');
+  const father = document.getElementById(acronym + '-div');
   const newButton = document.createElement('button');
   newButton.textContent = status;
   newButton.id = (acronym + '-status');
