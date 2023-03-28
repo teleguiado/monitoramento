@@ -3,7 +3,7 @@ import datetime
 from ping.aux_fun import grava, calculate_time
 import time
 
-def ping(IP):
+def alternate_IP_PORT(IP, PORT):
     # to ping a particular IP
     try:
         socket.setdefaulttimeout(5)
@@ -16,7 +16,7 @@ def ping(IP):
         # SOCK_STREAM: type for TCP
   
         host = IP
-        port = 445
+        port = PORT
   
         server_address = (host, port)
         s.connect(server_address)
@@ -31,7 +31,19 @@ def ping(IP):
         # closing the connection after the
         # communication with the server is completed
         return True
-
+    
+def ping(IP): #resolvo problema de portas
+    if alternate_IP_PORT(IP, 80):
+        return True
+    elif alternate_IP_PORT(IP, 135):
+        return True
+    elif alternate_IP_PORT(IP, 139):
+        return True
+    elif alternate_IP_PORT(IP, 445):
+        return True
+    else:
+        return False
+    
 def general_ping(ID, NICK, IP, unit_tip, acronym, queue):
     while True:
         if ping(IP): #pinga e testa reconexao se estiver disponivel
